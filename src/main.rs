@@ -109,8 +109,6 @@ fn main() {
             }
         }
 
-        println!("Min Guess: {}, Max Guess: {}", min_guess, max_guess);
-
         if min_guess == max_guess {
             answer = min_guess;
         }
