@@ -111,7 +111,11 @@ fn main() {
         }
 
         if answer > 0 {
-            println!("The answer is {}! I guessed it in {} tries!", answer, tries);
+            if answer == 1 {
+                println!("The answer is {}! I guessed it in 1 try!", answer);
+            } else {
+                println!("The answer is {}! I guessed it in {} tries!", answer, tries);
+            }
             break;
         }
     }
