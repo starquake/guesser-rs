@@ -70,7 +70,7 @@ fn main() {
     let mut max_guess = max;
     let mut answer = 0;
     let mut guess;
-    let mut tries = 0;
+    let mut tries = 1;
 
     println!("Welcome to Guesser-rs. The Rust version of my favorite programming test.");
     println!();
