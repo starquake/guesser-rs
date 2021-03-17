@@ -38,23 +38,20 @@ fn prompt(guess: i32, can_be_lower: bool, can_be_higher: bool) -> UserResponse {
         match selection.as_str() {
             "L" => {
                 if can_be_lower {
-                    response = UserResponse::L;
-                    break;
+                    break response = UserResponse::L;
                 } else {
                     println!("It can't be lower. Try again...");
                 }
             }
             "H" => {
                 if can_be_higher {
-                    response = UserResponse::H;
-                    break;
+                    break response = UserResponse::H;
                 } else {
                     println!("It can't be higher. Try again..");
                 }
             }
             "A" => {
-                response = UserResponse::A;
-                break;
+                break response = UserResponse::A;
             }
             _ => {
                 println!("Please respond with L, H or A...");
