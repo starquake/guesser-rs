@@ -47,7 +47,7 @@ fn prompt(guess: i32, can_be_lower: bool, can_be_higher: bool) -> UserResponse {
                 if can_be_higher {
                     break response = UserResponse::H;
                 } else {
-                    println!("It can't be higher. Try again..");
+                    println!("It can't be higher. Try again...");
                 }
             }
             "A" => {
